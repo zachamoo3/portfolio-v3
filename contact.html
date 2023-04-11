@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Zachary D. Moore</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.production.css">
+</head>
+
+<body>
+    <!--Header content with the logo and the main navigation-->
+    <header class="page-header">
+        <img src="./img/logo.png" alt="my logo reading Zachary D. Moore" class="page-header__item">
+        <nav class="page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="./index.html" role="menuitem" class="navigation-list__item circle-behind">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="./about.html" role="menuitem" class="navigation-list__item circle-behind">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="./work.html" role="menuitem" class="navigation-list__item circle-behind">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="./contact.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active circle-behind">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <br>
+
+    <!--Main content with my contact information and a form to directly contact me-->
+    <main class="contact">
+        <h1>Contact Me</h1>
+
+        <div class="contact__method">
+            <section class="contact__method--info">
+                <h2 id="contact-name">Zachary D. Moore</h2>
+                <p>
+                    Richardson, TX<br>
+                    United States<br>
+                    <br>
+                    <a href="tel:+1 972 743 5380">Tel +1 972 743 5380</a><br>
+                    <a href="mailto:zachary.d.moore184@gmail.com">zachary.d.moore184@gmail.com</a>
+                </p>
+            </section>
+
+            <form action="" method="post" class="contact__method--form" id="contact-form">
+                <label class="contact-label" for="contact-email">E-mail: </label>
+                <input class="contact-input" type="email" id="contact-email" required>
+
+                <label class="contact-label" for="contact-tel">Telephone: </label>
+                <input class="contact-input" type="tel" id="contact-tel" pattern="\{d3}[\-]\{d3}[\-]\{d4}">
+
+                <label class="contact-label" for="contact-message">Message: </label>
+                <textarea class="contact-textarea" maxlength="240" id="contact-message" required></textarea>
+
+                <input class="submit-button" type="submit" value="Send Message">
+            </form>
+        </div>
+    </main>
+    
+    <!--Footer content with links to my social media profiles-->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <section class="social-media">
+            <a href="https://github.com/zachamoo3" target="_blank"><img src="./img/github-icon.svg" alt="Github"></a>
+            <a href="https://twitter.com/zachamoo3" target="_blank"><img src="./img/twitter-icon.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/zachary-moore-b80295166/" target="_blank"><img
+                    src="./img/linkedin-icon.svg" alt="LinkedIn"></a>
+        </section>
+    </footer>
+
+    <script src="./js/tota11y.min.js"></script>
+</body>
+
+</html>

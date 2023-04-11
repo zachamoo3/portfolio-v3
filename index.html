@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary D. Moore -- Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.production.css">
+</head>
+
+<body>
+    <!--Header content with the logo and the main navigation-->
+    <header class="page-header">
+        <img src="./img/logo.png" alt="my logo reading Zachary D. Moore" class="page-header__item">
+        <nav class="page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="./index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active circle-behind">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="./about.html" role="menuitem" class="navigation-list__item circle-behind">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="./work.html" role="menuitem" class="navigation-list__item circle-behind">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="./contact.html" role="menuitem" class="navigation-list__item circle-behind">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <br>
+
+    <!--Main content with my profile and welcome-->
+    <main class="profile">
+        <img src="./img/zach-portrait.jpg" class="profile__portrait" alt="A professional photo of me.">
+        <article>
+            <h1 class="profile__header">Hello there!</h1>
+            <p class="profile__text">
+                My name is Zach. I am a <a href="./about.html" class="profile__text--web">&lt;web&gt;</a> developer from
+                Dallas, TX.
+            </p>
+            <a href="./work.html" class="profile__text">Check out some of my code.</a>
+        </article>
+    </main>
+
+    <!--Footer content with links to my social media profiles-->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <section class="social-media">
+            <a href="https://github.com/zachamoo3" target="_blank"><img src="./img/github-icon.svg" alt="Github"></a>
+            <a href="https://twitter.com/zachamoo3" target="_blank"><img src="./img/twitter-icon.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/zachary-moore-b80295166/" target="_blank"><img
+                    src="./img/linkedin-icon.svg" alt="LinkedIn"></a>
+        </section>
+    </footer>
+
+    <script src="./js/tota11y.min.js"></script>
+</body>
+
+</html>
