@@ -83,7 +83,7 @@ Heading Text: Libre Baskerville
     }
 
     a:active {
-        color: var(--background-color);
+        color: var(--tertiary-color);
     }
 
     a:focus {
@@ -108,7 +108,7 @@ Heading Text: Libre Baskerville
     /* Button Styles */
     .download-button,
     .submit-button {
-        background-color: var(--background-color);
+        background-color: var(--tertiary-color);
         color: var(--primary-color);
         font-size: 16px;
         width: 150px;
@@ -180,7 +180,7 @@ Heading Text: Libre Baskerville
         left: 50%;
         width: 25px;
         height: 25px;
-        border: 2px solid var(--background-color);
+        border: 2px solid var(--tertiary-color);
         transform: translateX(-50%) translateY(-50%) scale(0.8);
         border-radius: 50%;
         background: transparent;
@@ -230,7 +230,7 @@ Heading Text: Libre Baskerville
 
         a.profile__text--web {
             background-color: var(--primary-color);
-            color: var(--background-color);
+            color: var(--tertiary-color);
             text-decoration: none;
         }
 
@@ -297,7 +297,7 @@ Heading Text: Libre Baskerville
         }
 
         .skills-table__head--item {
-            background-color: var(--background-color);
+            background-color: var(--tertiary-color);
             font-weight: 700;
         }
 
@@ -309,7 +309,7 @@ Heading Text: Libre Baskerville
                 fill: var(--secondary-color);
             }
             50% {
-                fill: var(--background-color);
+                fill: var(--tertiary-color);
             }
             75% {
                 fill: var(--background-color);
