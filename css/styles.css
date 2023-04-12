@@ -71,7 +71,7 @@ Heading Text: Libre Baskerville
     }
 
     a {
-        color: var(--primary-color);
+        color: var(--secondary-color);
     }
 
     a:visited {
