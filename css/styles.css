@@ -477,3 +477,13 @@ Heading Text: Libre Baskerville
         flex-direction: column;
         text-align: center;
     }
+
+    .social-media a {
+        text-decoration: none;
+    }
+
+    .github,
+    .twitter,
+    .linkedin {
+        fill: var(--secondary-color);
+    }
