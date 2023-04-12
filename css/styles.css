@@ -264,6 +264,13 @@ Heading Text: Libre Baskerville
             margin: 0 auto;
             text-align: center;
         }
+
+        .about-one__svg,
+        .about-two__svg {
+            max-width: 90%;
+            height: auto;
+        }
+
         @media screen and (min-width:768px) {
         .about-one {
             display: flex;
@@ -302,7 +309,9 @@ Heading Text: Libre Baskerville
             width: 350px;
             height: auto;
         }
+
         }
+
         .about__p {
             text-align: center;
         }
