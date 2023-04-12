@@ -460,6 +460,7 @@ Heading Text: Libre Baskerville
 
             .project-grid__item > h2 {
                 font-size: 18px;
+                color: var(--primary-color);
             }
         }
 
@@ -468,6 +469,14 @@ Heading Text: Libre Baskerville
             .project-grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+        .project-grid__item {
+            border-radius: 5px;
+        }
+
+        .project-grid__item a {
+            color: var(--primary-color);
         }
 
     /* Contact Styles in contact.html */
