@@ -467,10 +467,12 @@ Heading Text: Libre Baskerville
 
         .contact__method {
             display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .contact__method--info {
-            width: 50%;
+            width: auto;
             padding: 10px;
         }
 
@@ -479,7 +481,7 @@ Heading Text: Libre Baskerville
         }
 
         .contact__method--form {
-            width: 50%;
+            width: auto;
             padding: 10px;
         }
 
@@ -492,8 +494,14 @@ Heading Text: Libre Baskerville
         .contact-input, 
         .contact-textarea {
             display: block;
-            width: 100%;
+            width: 230px;
             margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 550px) {
+            .contact__method {
+                flex-direction: column;
+            }
         }
 
 
