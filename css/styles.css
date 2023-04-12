@@ -141,12 +141,13 @@ Heading Text: Libre Baskerville
 /* Header Styles */
     .page-header {
         display: flex;
-        width: 100%;
+        width: auto;
         padding: 20px;
+        flex-wrap: wrap;
     }
 
     .page-header__item {
-        flex: 0 1 200px;
+        flex: 0 1;
         width: 200px;
         height: 70px;
     }
@@ -158,11 +159,31 @@ Heading Text: Libre Baskerville
 
     .navigation-list {
         list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        padding: 0;
     }
 
     .navigation-list li {
-        display: inline-block;
         margin-left: 15px;
+    }
+
+    @media screen and (max-width:550px) {
+        .page-header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navigation-list {
+            justify-content: center;
+        }
+
+        .navigation-list li {
+            margin-left: 0;
+            margin: 2px 20px;
+        }
     }
 
     .navigation-list__item--active {
