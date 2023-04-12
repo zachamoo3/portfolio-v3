@@ -83,7 +83,7 @@ hr {
 }
 
 a {
-    color: rgba(44, 51, 51, 1);
+    color: rgba(57, 91, 100, 1);
 }
 
 a:visited {
@@ -178,14 +178,16 @@ td {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: auto;
     padding: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .page-header__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
+        -ms-flex: 0 1;
+            flex: 0 1;
     width: 200px;
     height: 70px;
 }
@@ -199,11 +201,46 @@ td {
 
 .navigation-list {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding: 0;
 }
 
 .navigation-list li {
-    display: inline-block;
     margin-left: 15px;
+}
+
+@media screen and (max-width:550px) {
+    .page-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .navigation-list {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .navigation-list li {
+        margin-left: 0;
+        margin: 2px 20px;
+    }
 }
 
 .navigation-list__item--active {
@@ -284,20 +321,39 @@ a.circle-behind {
     .profile {
         max-width: 700px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .profile__portrait {
         float: left;
         width: 250px;
         height: auto;
-        margin-right: 40px;
         border-radius: 50%;
     }
 
-    .profile__text {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 100px;
-                flex: 1 1 100px;
+    .profile__body {
+        max-width: 400px;
+    }
+
+    @media screen and (max-width:550px) {
+        .profile {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        .profile__body {
+            text-align: center;
+        }
     }
 
     a.profile__text--web {
@@ -320,6 +376,13 @@ a.circle-behind {
         margin: 0 auto;
         text-align: center;
     }
+
+    .about-one__svg,
+    .about-two__svg {
+        max-width: 90%;
+        height: auto;
+    }
+
     @media screen and (min-width:768px) {
     .about-one {
         display: -webkit-box;
@@ -366,7 +429,9 @@ a.circle-behind {
         width: 350px;
         height: auto;
     }
+
     }
+
     .about__p {
         text-align: center;
     }
@@ -588,10 +653,16 @@ a.circle-behind {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .contact__method--info {
-        width: 50%;
+        width: auto;
         padding: 10px;
     }
 
@@ -600,7 +671,7 @@ a.circle-behind {
     }
 
     .contact__method--form {
-        width: 50%;
+        width: auto;
         padding: 10px;
     }
 
@@ -613,8 +684,17 @@ a.circle-behind {
     .contact-input, 
     .contact-textarea {
         display: block;
-        width: 100%;
+        width: 230px;
         margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 550px) {
+        .contact__method {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
     }
 
 
@@ -632,4 +712,20 @@ a.circle-behind {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.github {
+    fill: rgba(57, 91, 100, 1);
+}
+
+.twitter {
+    fill: rgba(57, 91, 100, 1);
+}
+
+.linkedin {
+    fill: rgba(57, 91, 100, 1);
 }
