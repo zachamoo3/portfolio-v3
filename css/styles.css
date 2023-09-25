@@ -467,7 +467,7 @@ Heading Text: Libre Baskerville
         }
 
         /* Project Grid in work.html for screens smaller than 768px */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 980px) {
             .project-grid {
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
@@ -475,8 +475,8 @@ Heading Text: Libre Baskerville
             }
 
             .project-grid__item:nth-child(1),
-            .project-grid__item:nth-child(2),
-            .project-grid__item:nth-child(4) {
+            .project-grid__item:nth-child(4),
+            .project-grid__item:nth-child(5) {
                 grid-column: auto / auto;
                 grid-row: auto/ auto;
             }
